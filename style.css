@@ -27,11 +27,30 @@ a {
 
 /* Style */
 
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
 body {
     background-color: #121214;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ----- Text ----- */
+
 section.text {
+    max-width: 720px;
+    width: 90%;
+    font-family: 'Work Sans', sans-serif;
+
     margin-top: 50px;
     margin-left: 36px;
 }
@@ -41,27 +60,85 @@ header img {
     height: 94px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+main section div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    margin-top: 92px;
 }
 
 h2 {
-    color: #08C05E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--title-color);
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
 }
 
 p {
-    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--text-color);
+}
+
+/* ----- Forms ----- */
+
+form {
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 17px; */
+    
+    margin-top: 50px;
+}
+
+form label {
+    color: var(--text-color);
+}
+
+input#email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 750px;
+    height: 48px;
+    
+    color: var(--form-color)
+}
+
+.box-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    background-color: var(--bg-button-color);
+    width: 48px;
+    height: 48px;
+}
+
+button img {
+    color: var(--text-color);
+    justify-content: center;
 }
 
 .news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5;
     color: #8257E5;
-    
 }
 
-.news img svg stroke {
-    fill: #8257E5;
-}
 .image {
     display: flex;
 
