@@ -1,3 +1,10 @@
 # **Desafio: RocketNews**
 
-O desafio é fazer uma página web simples utilizando HTML e CSS que servirá no futuro para captação de leads ou inscrição em newsletter.
+Criação de página web simples que servirá para captação de leads ou inscrição em newsletter.
+
+*Layout: Rocketseat*
+
+## &#128736; Ferramentas
+
+- HTML
+- CSS
